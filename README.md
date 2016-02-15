@@ -1,14 +1,14 @@
 # react-cv
 
 I believe that React is the only JS library that can use the composite view pattern (CV) easily.
-With composite view pattern we can make our life very easy to scale huge applications.  Just by copying the react component (page) and creating new rout.
+With composite view pattern we can easily scale huge applications.  Just by copying the react component (page) and creating new rout.
 
-#The Composite View Pattern
+###The Composite View Pattern
 All websites have something in common: they are made of pages that share similar structures. The pages share the same layout, while each page is made of different independent pieces, but always placed in the same position across all the site.
 
 The Composite View pattern formalizes this typical use, by allowing to create pages that have a similar structure, in which each section of the page vary in different situations.
 
-#How the pattern works
+####How the pattern works
 To understand this pattern, let's take an example. In the following picture you can see a typical structure of a web page.
 
 | Header | 
@@ -24,11 +24,11 @@ As you can see, the pages are different, but their difference is only in the bod
 
 Using the composite view pattern, the other part of the page have been reused, and the layout consistence has been preserved.
 
-#The role of the View Helper
+####The role of the View Helper
 Each piece of the composed page can have a "view helper". This pattern allows the preparation of the data to be displayed in a consistent way for the page piece itself, for example to create a menu.
 
 
-#Composite View vs. Decorator
+####Composite View vs. Decorator
 Tiles is a composite view framework: it allows to reuse page pieces across the application. But another approach to achieve the same result is using the Decorator pattern. For example, Sitemesh is based on the Decorator pattern.
 Instead of creating a template and organizing the pieces together, the Decorator pattern (in this case) takes a simple HTML page, transforms it adding the missing pieces (in our example, adding header, footer and menu) and finally renders it.
 Here you can find a comparison table between the two patterns.
