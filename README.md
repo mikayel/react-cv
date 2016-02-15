@@ -1,5 +1,7 @@
 # react-cv
-React Composite View Pattern
+
+I believe that React is the only JS library that can use the composite view pattern (CV) easily.
+With composite view pattern we can make our life very easy to scale huge applications.  Just by copying the react component (page) and creating new rout.
 
 #The Composite View Pattern
 All websites have something in common: they are made of pages that share similar structures. The pages share the same layout, while each page is made of different independent pieces, but always placed in the same position across all the site.
@@ -8,7 +10,12 @@ The Composite View pattern formalizes this typical use, by allowing to create pa
 
 #How the pattern works
 To understand this pattern, let's take an example. In the following picture you can see a typical structure of a web page.
-|--------
+
+| Header | 
+| ------------- | 
+| Menu ! Body |
+| Footer  | 
+
 This structure is called "Classic Layout". The template organizes the page according to this layout, putting each "piece" in the needed place, so that the header goes up, the footer down, etc.
 It can happen that, for example clicking on a link, it is needed to change only a part of the page, typically the body.
 
