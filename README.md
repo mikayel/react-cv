@@ -45,6 +45,7 @@ open web server
 * Webpack
 
 ```
+____
 
 ###More about The Composite View Pattern
 All websites have something in common: they are made of pages that share similar structures. The pages share the same layout, while each page is made of different independent pieces, but always placed in the same position across all the site.
@@ -56,13 +57,22 @@ To understand this pattern, let's take an example. In the following picture you 
 
 | Header | 
 | ------------- | 
-| Menu ! Body |
+| Menu \| Body |
 | Footer  | 
 
 This structure is called "Classic Layout". The template organizes the page according to this layout, putting each "piece" in the needed place, so that the header goes up, the footer down, etc.
 It can happen that, for example clicking on a link, it is needed to change only a part of the page, typically the body.
 
-|--------  |---------
+| Header | 
+| ------------- | 
+| Menu \| Body 1|
+| Footer  |  
+
+| Header | 
+| ------------- | 
+| Menu \| Body 2 |
+| Footer  | 
+
 As you can see, the pages are different, but their difference is only in the body part. Note that, however, the pages are distinct, it is not like a refresh of a frame in a frameset!
 
 Using the composite view pattern, the other part of the page have been reused, and the layout consistence has been preserved.
