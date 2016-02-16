@@ -44,6 +44,7 @@ open web server
 * React
 * Webpack
 
+```
 
 ###More about The Composite View Pattern
 All websites have something in common: they are made of pages that share similar structures. The pages share the same layout, while each page is made of different independent pieces, but always placed in the same position across all the site.
