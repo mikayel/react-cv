@@ -3,7 +3,49 @@
 I believe that React is the only JS library that can use the composite view pattern (CV) easily.
 With composite view pattern we can easily scale huge applications.  Just by copying the react component (page) and creating new rout.
 
-###The Composite View Pattern
+The minimal environment to enable React components. You can use any web server (Apache, Nginx...). I am using Apache web server.
+
+* Compilation with webpack
+* React
+* react-router
+* Stylesheets can be CSS
+* Loads a react component (and dependencies) on demand.
+
+
+### Getting Started
+
+Just [clone](github-windows://openRepo/https://github.com/mikayel/react-cv) or
+[fork](https://github.com/mikayel/react-cv/fork) the repo and start hacking:
+
+## Local Installation
+
+Install [node.js](https://nodejs.org)
+
+```shell
+git clone -o react-cv -b master --single-branch \
+      https://github.com/mikayel/react-cv.git www
+
+cd www
+npm install                   # Install Node.js components listed in ./package.json
+
+webpack                       # Compilation with webpack
+webpack -p                    # Compilation with webpack for production
+webpack --watch               # Reale time compilation with webpack for development only
+
+## Usage
+
+If you are not using www as your document_root
+copy index.html to your web server root, change __build__/app.js path, change web server path in webpack.config.js 
+
+open web server
+
+### Dependencies
+
+* React
+* Webpack
+
+
+###More about The Composite View Pattern
 All websites have something in common: they are made of pages that share similar structures. The pages share the same layout, while each page is made of different independent pieces, but always placed in the same position across all the site.
 
 The Composite View pattern formalizes this typical use, by allowing to create pages that have a similar structure, in which each section of the page vary in different situations.
