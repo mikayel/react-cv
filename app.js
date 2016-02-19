@@ -21,6 +21,7 @@ const Home = React.createClass({
 
 const Inbox = React.createClass({
     render() {
+
         return (
             <div>
                 <h2>Inbox</h2>
