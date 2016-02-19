@@ -1,28 +1,21 @@
 'use strict';
 import React from 'react'
 import { render } from 'react-dom'
-import { Router, Route, Link, browserHistory } from 'react-router'
+import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
 
 const App = React.createClass({
     render() {
-        console.log(this.props.children);
         return (
             <div>
-                <h1>App</h1>
-                <ul>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/inbox">Inbox</Link></li>
-                    <li><Link to="/one">One</Link></li>
-                </ul>
                 {this.props.children}
             </div>
         )
     }
 })
 
-const About = React.createClass({
+const Home = React.createClass({
     render() {
-        return <h3>About</h3>
+        return <h3>Home</h3>
     }
 })
 
@@ -52,12 +45,14 @@ const NoMatch = React.createClass({
 render((
     <Router history={browserHistory}>
         <Route path="/" component={App}>
-            <Route path="one" component={require('react-router-proxy!./src/One')} />
-            <Route path="about" component={About} />
+            <IndexRoute component={Home}/>
+            <Route path="one" component={require('react-router-proxy!./pages/one/One')} />
+            <Route path="two" component={require('react-router-proxy!./pages/two/Two')} />
+            <Route path="three" component={require('react-router-proxy!./pages/three/Three')} />
             <Route path="inbox" component={Inbox}>
                 <Route path="messages/:id" component={Message} />
             </Route>
-            <Route path="*" component={NoMatch}/>
+            <Route path="*" component={require('react-router-proxy!./pages/NoMatch/NoMatch')}/>
         </Route>
     </Router>
 ), document.getElementById('appWraper'))
