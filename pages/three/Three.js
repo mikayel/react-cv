@@ -1,5 +1,7 @@
 'use strict';
 
+import './Three.css';
+
 import React from 'react'
 
 import Header from '../../components/header/Header';
@@ -8,7 +10,7 @@ import Footer from '../../components/footer/Footer';
 
 const Three = React.createClass({
     render() {
-        return <div>
+        return <div className="page_three">
             <Header />
             <Navigation />
             <h3>Three</h3>

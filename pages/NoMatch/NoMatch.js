@@ -8,7 +8,7 @@ import Footer from '../../components/footer/Footer';
 
 const NoMatch = React.createClass({
     render() {
-        return <div>
+        return <div className="page_no_match">
             <Header />
             <Navigation />
             <h3>Page not found.</h3>
