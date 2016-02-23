@@ -1,14 +1,15 @@
 # react-cv
 
-I believe that React is the only JS library that can use the composite view pattern (CV) easily.
+## React and Composite View Pattern
+
 With composite view pattern we can easily scale huge applications.  Just by copying the react component (page) and creating new route.
 
-The minimal environment to enable React components. You can use any web server (Apache, Nginx...). I am using Apache web server.
+The minimal environment to enable react with react-router and webpack. You can use any web server (Apache, Nginx...). I am using Apache web server.
 
 * Compilation with webpack
 * React
 * react-router
-* Stylesheets can be CSS
+* Stylesheets just CSS
 * Loads a react component (and dependencies) on demand.
 
 
