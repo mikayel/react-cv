@@ -11,6 +11,8 @@ const Navigation = React.createClass({
                 <li><Link to="/">One</Link></li>
                 <li><Link to="/two">Two</Link></li>
                 <li><Link to="/three">Three</Link></li>
+                <li><Link to="/users">Users</Link></li>
+                <li><Link to="/user/1">User 1</Link></li>
             </ul>
         </div>
     }
