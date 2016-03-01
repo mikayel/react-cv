@@ -8,7 +8,7 @@ With composite view pattern we can easily scale huge applications.  Just by copy
 
 The minimal environment to enable react with react-router and webpack. You can use any web server (Apache, Nginx...). I am using Apache web server for demo.
 
-# Demo [demo](http://mikayel.com/react-cv-demo/)
+## [See demo](http://mikayel.com/react-cv-demo/)
 
 * Compilation with webpack
 * React
