@@ -30,7 +30,7 @@ Install [node.js](https://nodejs.org)
 git clone -o react-cv -b master --single-branch \
       https://github.com/mikayel/react-cv.git www
 
-npm install -g webpack        # If you don't have webpack install
+sudo npm install -g webpack   # If you don't have webpack installed
 
 cd www
 npm install                   # Install Node.js components listed in ./package.json
