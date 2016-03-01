@@ -2,9 +2,13 @@
 
 ## React and Composite View Pattern
 
+Starter template for React with webpack. Does focus on simplicity! Minimum dependencies (only React, react-router and Webpack).
+
 With composite view pattern we can easily scale huge applications.  Just by copying the react component (page) and creating new route.
 
-The minimal environment to enable react with react-router and webpack. You can use any web server (Apache, Nginx...). I am using Apache web server.
+The minimal environment to enable react with react-router and webpack. You can use any web server (Apache, Nginx...). I am using Apache web server for demo.
+
+# Demo [demo](http://mikayel.com/react-cv-demo/)
 
 * Compilation with webpack
 * React
@@ -25,6 +29,8 @@ Install [node.js](https://nodejs.org)
 ```shell
 git clone -o react-cv -b master --single-branch \
       https://github.com/mikayel/react-cv.git www
+
+npm install -g webpack        # If you don't have webpack install
 
 cd www
 npm install                   # Install Node.js components listed in ./package.json
