@@ -9,6 +9,7 @@ With composite view pattern we can easily scale huge applications.  Just by copy
 The minimal environment to enable react with react-router and webpack. You can use any web server (Apache, Nginx...). I am using Apache web server for demo.
 
 ## [See demo](http://mikayel.com/react-cv-demo/)
+As you can see from simple demo app.js is less than 70 KB and chunk files are less than 1KB. But it will help to build huge, intuitive and easy scalable application with react. Even react beginner can do it.
 
 * Compilation with webpack
 * React
@@ -27,17 +28,17 @@ Just [clone](github-windows://openRepo/https://github.com/mikayel/react-cv) or
 Install [node.js](https://nodejs.org)
 
 ```shell
-git clone -o react-cv -b master --single-branch \
-      https://github.com/mikayel/react-cv.git www
-
 sudo npm install -g webpack   # If you don't have webpack installed
 
+git clone -o react-cv -b master --single-branch \
+      https://github.com/mikayel/react-cv.git www
+      
 cd www
 npm install                   # Install Node.js components listed in ./package.json
 
 webpack                       # Compilation with webpack
 webpack -p                    # Compilation with webpack for production
-webpack --watch               # Reale time compilation with webpack for development only
+webpack -w                    # Reale time compilation with webpack for development only
 
 ## Usage
 
