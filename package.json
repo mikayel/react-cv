@@ -1,6 +1,6 @@
 {
   "name": "react-cv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react, webpack, react-router, composite view pattern",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "react-loader": "^2.0.0",
     "react-proxy-loader": "^0.3.4",
     "react-router": "^2.0.0",
-    "react-router-proxy-loader": "^0.4.3",
+    "react-router-proxy-loader": "^0.5.0",
     "style-loader": "^0.13.0",
     "url-loader": "^0.5.7"
   },
