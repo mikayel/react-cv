@@ -1,6 +1,6 @@
 {
   "name": "react-cv",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "react, webpack, react-router, composite view pattern",
   "main": "index.js",
   "scripts": {
@@ -28,16 +28,16 @@
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
     "node-libs-browser": "^1.0.0",
-    "react": "^0.14.7",
-    "react-dom": "^0.14.7",
-    "react-loader": "^2.0.0",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "react-loader": "^2.2.0",
     "react-proxy-loader": "^0.3.4",
     "react-router": "^2.0.0",
     "react-router-proxy-loader": "^0.5.0",
-    "style-loader": "^0.13.0",
+    "style-loader": "^0.13.1",
     "url-loader": "^0.5.7"
   },
   "devDependencies": {
-    "webpack": "^1.12.13"
+    "webpack": "^1.12.14"
   }
 }
