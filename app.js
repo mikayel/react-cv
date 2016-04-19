@@ -7,28 +7,24 @@ import { render } from 'react-dom'
 import { Router, Route, Link, browserHistory, IndexRoute } from 'react-router'
 
 const App = React.createClass({
-    get: function(key) {
-        return this.state[key];
-    },
-
-    set: function(obj) {
-        this.setState(obj);
-    },
-
     getInitialState: function(){
         return {};
     },
 
-    childContextTypes: {
-        _GET_: React.PropTypes.func,
-        _SET_: React.PropTypes.func,
-        _LOCATION_: React.PropTypes.object
+    appState: function(obj) {
+        if (typeof obj == "string") {
+            return this.state[obj];
+        }
+        this.setState(obj);
     },
+
+    childContextTypes: {
+        appState: React.PropTypes.func
+    },
+
     getChildContext: function() {
         return {
-            _GET_: this.get,
-            _SET_: this.set,
-            _LOCATION_: this.props.location
+            appState: this.appState
         };
     },
 

@@ -5,12 +5,11 @@ import React from 'react'
 const Footer = React.createClass({
 
     contextTypes: {
-        _GET_: React.PropTypes.func,
-        _LOCATION_: React.PropTypes.object
+        appState: React.PropTypes.func
     },
 
     render() {
-        return <div>Footer {this.context._GET_("a")}</div>
+        return <div>Footer {this.context.appState("a")}</div>
     }
 })
 
