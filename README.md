@@ -10,7 +10,7 @@ The minimal environment to enable react with react-router and webpack. You can u
 
 ## [See demo](http://mikayel.com/react-cv-demo/)
 
-## [Advanced verion] (https://github.com/mikayel/React-CV-Huge-App-Starter}
+## [Advanced verion] (https://github.com/mikayel/React-CV-Huge-App-Starter)
 As you can see from simple demo app.js is less than 70 KB and chunk files are less than 1KB. But it will help to build huge, intuitive and easy scalable application with react. Even react beginner can do it.
 
 * Compilation with webpack
