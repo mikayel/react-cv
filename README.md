@@ -1,4 +1,7 @@
 # react-cv
+## react-cv is deprecated. We encourage all to use 
+( https://github.com/mikayel/React-Composite-View )
+
 
 ## React and Composite View Pattern
 
